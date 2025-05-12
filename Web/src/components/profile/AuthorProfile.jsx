@@ -5,6 +5,8 @@ import LibraryGrid from './LibraryGrid';
 import { getUserDetails } from '../../api/userAPI';
 import { useAuth } from '../../Context'; // adding this to check if my current user is the same user with the registered token in this wrapper 
 import { getFollowerCount, getAllFollowing, followUser, unfollowUser } from '../../api/followAPI';
+import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const AuthorProfile = () => {
   const [followerCount, setFollowerCount] = useState(0); 
@@ -83,6 +85,9 @@ const AuthorProfile = () => {
 
 
     <div className="author-profile-wrapper">
+        <Link to='/homepage' className='homehome'>
+        <FaHome />
+      </Link>
       <div className="author-profile-container">
         <div className="author-profile">
           <div className="author-profile-header" style={{ backgroundImage: `url('${user.backgroundImage}')`}}>

@@ -216,6 +216,31 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.homehome {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.homehome:focus,
+.homehome:active {
+  outline: none;
+  color: white;
+}
+.homehome :hover{
+  color: rgb(187, 184, 184);
+}
+
+
 @media (max-width: 1024px) {
   .author-profile-title {
     font-size: 72px;
