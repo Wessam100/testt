@@ -1,0 +1,192 @@
+.form-bookk-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px;
+    min-height: 100vh;
+    background-color: #121212;
+  }
+  
+  .form-bookk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 60px;
+  }
+  
+  .image-container-bookk,
+  .content-container-bookk {
+    flex: 1;
+    min-width: 320px;
+  }
+  
+  .image-container-bookk h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .image-container-bookk img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  input[type="file"] {
+    background-color: #282828;
+    padding: 12px;
+    border-radius: 8px;
+    color: #b3b3b3;
+    margin-top: 12px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-size: 0.95rem;
+  }
+  
+  .add-field-input-bookk {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #282828;
+    color: #fff;
+    font-size: 1.05rem;
+  }
+  
+  textarea.add-field-input-bookk {
+    resize: vertical;
+    min-height: 100px;
+  }
+  .buttons-div-bookk {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Adjust gap as needed */
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .createbook,
+  .cancel-btn {
+    flex: 1;             
+    min-width: 150px;       
+    padding: 11px 16px;     
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-align: center;    
+  }
+  
+  .createbook {
+    background-color: #1db954;
+    color: white;
+  }
+  
+  .createbook:hover:not(:disabled) {
+    background-color: #1ed760;
+    transform: scale(1.03);
+  }
+  
+  .createbook:disabled {
+    background-color: #3e3e3e;
+    color: #b3b3b3;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+  }
+  
+  .cancel-btn {
+    background-color: #b30000;
+    color: #b3b3b3;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #d50707;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .form-bookk-wrapper {
+      padding: 10px;
+    }
+  
+    .form-bookk {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .image-container-bookk,
+    .content-container-bookk {
+      width: 100%;
+      min-width: 0; 
+    }
+  
+    .add-field-input-bookk,
+    textarea.add-field-input-bookk {
+      width: 100%;
+      max-width: 100%;
+      font-size: 0.9rem;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .buttons-div-bookk {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .createbook,
+    .cancel-btn {
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    input[type="file"] {
+      font-size: 0.85rem;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    audio {
+      width: 100%;
+    }
+  }
+  .book-genre-dropdown {
+    width: 100% !important;
+    max-width: 350px !important;
+    min-width: 150px;
+    position: relative !important;
+    box-sizing: border-box !important;
+    margin: 0 0 20px 0 !important;
+    display: block !important;
+    z-index: 1;
+    background: #282828;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    right : 0 !important;
+    padding: 12px 16px;
+    font-size: 1.05rem;
+  }
+  

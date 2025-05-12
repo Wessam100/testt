@@ -1,0 +1,85 @@
+#play-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    background-color: #0B0A0A;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+  
+  #play-icon.paused {
+    background-image: url('../../assets/pauseButton.png');
+  }
+
+  #play-icon.playing {
+    background-image: url('../../assets/playButton.png');
+  }
+  
+  #play-icon:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  #play-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  
+  #playbar-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0.5%;
+  }
+  
+  #audio-player-container {
+    position: relative;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    padding: 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  
+  #seek-slider {
+    width: 80%;
+    height: 2px;
+    background: #282727;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 12px;
+    appearance: none; 
+  }
+  
+  
+  #seek-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #C5C0C0; 
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  #time-bar{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      width: 80%;
+      gap: 0.5em;
+  }

@@ -1,0 +1,166 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.title-search {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: white;
+    width: 250px;
+}
+
+.delete-button {
+    color: white; 
+    background-color: crimson;
+    border: none;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delete-button:hover {
+    background-color: rgb(200, 0, 0);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+
+.table-styling {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #181818;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.th-td-styling {
+    padding: 12px 15px; 
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.th-styling {
+    color: #1DB954;
+    font-weight: 900;
+    background-color: #1e1e1e;
+}
+
+.book-cover-img {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.books-table {
+    display: flex;
+    gap: 20px;
+}
+
+.books-table-image {
+    flex: 1;
+}
+
+.books-table-details {
+    flex: 2;
+    color: #ccc;
+}
+
+
+.scrolling-table {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+}
+
+.edit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+td.edit-booklist {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; 
+    margin-top: 35px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title-name {
+        font-size: 22px;
+    }
+
+    .title-search {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    td.edit-booklist {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .delete-button {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .book-cover-img {
+        width: 50px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-name {
+        font-size: 18px;
+    }
+
+    .title-search {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .delete-button {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .book-cover-img {
+        width: 45px;
+        height: 65px;
+    }
+
+  }

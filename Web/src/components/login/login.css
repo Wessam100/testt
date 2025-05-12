@@ -1,0 +1,81 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.login-left, .login-right {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-left {
+  flex: 3;
+  background-color: #121212;
+}
+
+.login-right {
+  flex: 2;
+  background-color: #181818;
+  border-left: 1px solid #2a2a2a;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.login-form-input:focus {
+  outline: none;
+  border: 2px solid #1db954;
+}
+
+.submit-btn, .signup-btn {
+  width: 100%;
+  background-color: #1db954;
+  border: none;
+  color: white;
+  padding: 14px 24px;
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .signup-btn:hover {
+  background-color: #1ed760;
+}
+
+.error {
+  color: #f44336;
+  font-size: 0.9em;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}

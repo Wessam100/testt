@@ -1,0 +1,19 @@
+.search-bar {
+  margin: 0.25px ;
+  width: 60%;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #282828;
+  color: white;
+  margin-top: 10px;
+  border-radius: 50px;
+  
+
+}

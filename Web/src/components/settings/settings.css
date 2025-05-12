@@ -1,0 +1,162 @@
+
+.settings-container {
+  background-color: #121212;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 100%; 
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: absolute; 
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  overflow-y: auto; 
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 130px;
+}
+
+
+.settings-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.settings-container .settext {
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+  color: #ffffff;
+}
+
+
+.settings-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-container .editt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.settings-container .editt a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.settings-container .editt a:hover {
+  color: #1aa34a;
+}
+
+
+.settings-container .delete-account {
+  display: inline-block;
+  color: #ff0000;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.settings-container .delete-account:hover {
+  color: #e60000;
+}
+
+
+.settings-container div {
+  margin-top: 20px;
+}
+
+.settings-container h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.settings-container button {
+  background-color: #1db954;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.settings-container button:hover {
+  background-color: #1aa34a;
+}
+
+.settings-container button:focus {
+  outline: none;
+}
+
+
+.settings-container button:nth-child(2) {
+  background-color: #8e8e8e;
+  margin-right: 40px;
+}
+
+.settings-container button:nth-child(2):hover {
+  background-color: #707070;
+}
+
+.settings-container button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+button.notcool {
+  margin-right: 30px;
+  background-color: #707070;
+}
+
+button.notcool:hover {
+  margin-right: 30px;
+  background-color: #626060;
+}
+.settings-home-icon {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 24px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.settings-home-icon:hover {
+  color: #707070;
+}
+
+
+
+@media (max-width: 600px) {
+  .settings-container {
+    padding: 15px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .settings-container .settext {
+    font-size: 20px;
+  }
+
+  .settings-container .editt a {
+    font-size: 14px;
+  }
+
+  .settings-container button {
+    width: 100%;
+    padding: 12px;
+  }
+}

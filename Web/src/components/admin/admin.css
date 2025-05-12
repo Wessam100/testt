@@ -1,0 +1,194 @@
+.page-title {
+    margin-left: 7%;
+    margin-top: 2%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.scrollable-div-container {
+    width: auto;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #121212;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.admin-page {
+    margin: 5% 10%;
+    padding: 0.5%;
+}
+
+.logout-button {
+    
+    float: right;
+    background-color: #1DB954;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+.logout-button:hover {
+    background-color: #1ed760;
+}
+
+.div-section-layout {
+    padding: 5%;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    background-color: #181818;
+    width: 100%;
+    justify-self: center;
+}
+
+.users-table-users-button,
+.books-table-users-button,
+.users-table-books-button,
+.books-table-books-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.users-table-users-button,
+.books-table-users-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.users-table-books-button,
+.books-table-books-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.users-table-books-button,
+.books-table-users-button {
+    color: grey;
+    background-color: #2a2a2a;
+}
+
+.books-table-books-button,
+.users-table-users-button {
+    background-color: #1DB954;
+    color: white;
+}
+
+.users-table-users-button:hover,
+.users-table-users-button:focus,
+.users-table-books-button:hover,
+.users-table-books-button:focus,
+.books-table-users-button:hover,
+.books-table-users-button:focus,
+.books-table-books-button:hover,
+.books-table-books-button:focus {
+    outline: none;
+    background-color: #1DB954;
+    color: white;
+    justify-content: left;
+    
+}
+
+.addnew{
+    outline: none;
+    background-color: #1DB954;
+    color: white;
+    border: 0;
+}
+
+.tab-buttons{
+    margin-bottom: 20px;
+}
+
+.stupidbuttons{
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .admin-page {
+      margin: 5% 5%;
+    }
+  
+    .page-title {
+      margin-left: 5%;
+      font-size: 1.75rem;
+    }
+  
+    .logout-button {
+      margin-right: 10px;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .div-section-layout {
+      padding: 4%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 1.5rem;
+      margin-left: 4%;
+      text-align: center;
+    }
+  
+    .logout-button {
+      float: none;
+      display: block;
+      margin: 10px auto 20px auto;
+    }
+  
+    .tab-buttons,
+    .stupidbuttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .users-table-users-button,
+    .books-table-users-button,
+    .users-table-books-button,
+    .books-table-books-button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .div-section-layout {
+      padding: 5%;
+      border-radius: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-title {
+      font-size: 1.25rem;
+      margin: 10px;
+    }
+  
+    .logout-button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.7rem;
+    }
+  
+    .users-table-users-button,
+    .books-table-users-button,
+    .users-table-books-button,
+    .books-table-books-button {
+      font-size: 0.9rem;
+    }
+  
+    .div-section-layout {
+      padding: 4%;
+    }
+  }
+  

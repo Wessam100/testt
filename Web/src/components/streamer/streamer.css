@@ -1,0 +1,51 @@
+.imageContainer{
+    margin-top: 40px;
+}
+
+.startstreaming {
+    display: block;
+    margin: 30px auto; 
+    background: #1db954; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(30, 185, 84, 0.3);
+    margin-top: 90px;
+  }
+  
+  .startstreaming:hover {
+    background: #1ed760;
+    transform: scale(1.03);
+  }
+  
+  .startstreaming:active {
+    transform: scale(0.98);
+  }
+  
+  .streamId {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #1db954;
+    font-weight: 500;
+  }
+  
+  .bg-color{
+    background-color: #121212;
+      min-height: 100vh; 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+.stream-id-display {
+  margin: 0 auto -70px auto;
+  text-align: center;
+}
